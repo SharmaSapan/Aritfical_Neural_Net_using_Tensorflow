@@ -1,2 +1,13 @@
 # Aritfical_neural_net_using_tensorflow
-An application of Artificial Neural Networks using Tensorflow library from Google
+
+### An application of Artificial Neural Networks using Tensorflow library from Google.  ###
+
+#### Artificial Neural Networks was explored to get better understanding of both popular AI algorithm and the industry standard library used to create them. Algorithm used to perform supervised learning in feed-forward neural architectures is backpropagation and RMSprop. ####
+
+#### Data is from Thermopile Arrays which are passive sensors that register infrared from the environment which is correlated with temperature and can act as a form of heat detector. Data consists of a collection of indoor and outdoor samples collected with human subjects in front of the sensor, with categories such as samples with no subject; with a single subject from 1', 3', and 6'; two subjects from 3'; and three subjects from 3'. ####
+
+#### Backprop algirithm used here uses gradient descent which efficiently computes the gradient passing  through  the  network, one forward and then one backword, propagating the correction using chain rule from calculus. The backpropagation algorithm calculates the gradient of the network’s error, that  is  error produced by each neuron in the network and then finds out how that neuron data should be tweaked in order to decrease that error to converge to a solution. ####
+
+#### Accuracy metrics were used which provides the percentage of correct predictions compared to actual label. Also, sum-mean square error was used to see error loss during training and to plot on graph. K-fold cross validation method is used to split the data into training and validation data to tune the hyper-parameters in small limited data set to estimate how the model is expected to perform when put to test on unseen data during training of network. It helps us to use more data and get more metrics on the model performance on different data sets and help fine tune the parameters. ####
+
+#### Other tests were performed to check which configuration is better for the learning algorithm by changing the hyperparamers to find statisial significant config. Shapiro  wilk  test  is  performed  on  all  three  test  set  ac-curacies.  This  test,  tests  the normality of the data. Scipy library of python was used to find results of the shapiro test. ANOVA test is performed on the test accuracy sets on three different parameters which provides us the evidence about the differences among means. Stats model library was used to find results of ANOVA test. t-test is performed on accuracy test set to determine if there is significant difference between the  means among all three tests. Scipy library was used to find results of t-test. In general, if t-test rejects hypothesis, the higher accuracy test parameter withless standard deviation is the best candidate.
