@@ -1,4 +1,4 @@
-# Sapan Sharma, 6352819, COSC 4P80
+
 import os
 import numpy as np
 import random
